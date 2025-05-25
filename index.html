@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja de iPhones</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Compre iPhones com os melhores preços. Modelos iPhone 15, 14, 13 e mais disponíveis." />
+  <meta name="author" content="Sua Loja Online" />
+  <title>Loja de iPhones - Melhores Ofertas</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- Cabeçalho -->
   <header>
     <h1>Loja de iPhones</h1>
-    <nav>
-      <input type="text" id="search" placeholder="Buscar iPhone...">
-    </nav>
+    <form class="search-bar" onsubmit="event.preventDefault()">
+      <input type="text" placeholder="Buscar iPhone..." />
+      <button type="submit">🔍</button>
+    </form>
   </header>
 
-  <main id="produtos-container">
-    <!-- Produtos serão inseridos via JavaScript -->
+  <!-- Conteúdo Principal -->
+  <main>
+    <section>
+      <h2 style="margin-bottom: 1rem;">Modelos disponíveis</h2>
+      <div class="product-grid" id="product-list">
+        <!-- Produtos serão carregados aqui dinamicamente -->
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Loja de iPhones. Todos os direitos reservados.</p>
+  <!-- Rodapé (opcional) -->
+  <footer style="text-align: center; padding: 2rem 1rem; color: #555;">
+    &copy; 2025 Sua Loja Online. Todos os direitos reservados.
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
 </body>
 </html>
